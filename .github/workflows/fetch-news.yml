@@ -18,7 +18,7 @@ jobs:
       - name: Fetch API Data - ${{ matrix.language }}📦
         uses: JamesIves/fetch-api-data-action@releases/v1
         with:
-          ENDPOINT: https://newsapi.org/v2/everything?q=apple&language=${{ matrix.language }}&sortBy=popularity&apiKey=${{ secrets.NEWS_API_KEY }}
+          ENDPOINT: https://newsapi.org/v2/everything?q=entertainment%20news&language=${{ matrix.language }}&sortBy=popularity&apiKey=${{ secrets.NEWS_API_KEY }}
           retry: true
 
       - name: Stage - ${{ matrix.language }}🚀

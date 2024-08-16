@@ -79,7 +79,7 @@ jobs:
 
             if articles:
                 with open('tf.json', 'w') as f:
-                    json.dump(articles, f, indent=4)
+                    json.dump(articles, f)
 
       - name: Commit JSON file to gh-pages
         uses: EndBug/add-and-commit@v9

@@ -48,7 +48,8 @@ jobs:
                         return None
 
             base_url = 'https://torrentfreak.com/category/piracy'
-            pages = [base_url] + [f'{base_url}/page/{i}' for i in range(2, 6)]
+            base_url2 = 'https://torrentfreak.com/category/anti-piracy'
+            pages = [base_url, base_url2] + [f'{base_url}/page/{i}' for i in range(2, 6)] + [f'{base_url2}/page/{i}' for i in range(2, 6)]
 
             articles = []
 

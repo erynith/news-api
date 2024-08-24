@@ -1,0 +1,9 @@
+{
+  "name": "load",
+  "version": "1.0.0",
+  "main": "load.js",
+  "type": "module",
+  "dependencies": {
+    "node-fetch": "^3.3.0"
+  }
+}

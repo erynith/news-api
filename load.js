@@ -14,7 +14,7 @@ await fetch(`https://api.themoviedb.org/3/trending/movie/week?language=en-US&api
                 year: item.release_date.split("-")[0],
                 tmdbId: item.id.toString()
             }))}`).then(r => r.text()).then(result => {
-                console.log(item.title, result)
+                console.log(item.title)
             })
         } catch(err) {
             console.error("Error:", err)
